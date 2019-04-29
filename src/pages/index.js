@@ -41,12 +41,16 @@ const LandingSection = styled.section`
   }
 
   .content {
-    padding: 0px 100px;
+    max-width: 1248px;
+    margin: auto;
+    padding: 5px;
+  }
+
+  @media (min-width: 992px) {
   }
 `
 const HeaderStyle = styled.header`
   padding-top: 68px;
-  padding-left: 100px;
   h1 {
     color: #fff !important;
   }
@@ -66,8 +70,8 @@ const IndexPage = () => (
     />
     <LandingSection>
       <img className="lines" src={lines} />
-      <Header />
       <div className="content">
+        <Header />
         <div className="text-div">
           <h1>Introducing Skwint.</h1>
           <p>
