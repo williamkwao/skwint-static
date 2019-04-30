@@ -37,7 +37,7 @@ const LandingSection = styled.section`
   }
 
   .text-div {
-    max-width: 650px;
+    max-width: 567px;
     margin-top: 32px;
   }
 
