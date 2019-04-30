@@ -53,9 +53,10 @@ const SubscribeStyle = styled.div`
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         padding: 15px 18px;
-        margin-left: -213px;
+        margin-left: -215px;
         border: 1.5px solid #ffffff;
-        min-width: 213.906px;
+        min-width: 215.906px;
+        padding-bottom: 16px;
       }
     }
   }
