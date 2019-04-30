@@ -2,18 +2,15 @@ import React, { Component } from 'react'
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 import styled from 'styled-components'
 
+const defaultButtonText = 'Follow Our Journey'
 const SubscribeStyle = styled.div`
   form {
     font-family: Montserrat;
 
     input {
-      :focus {
-        outline: none;
-      }
       font-size: 16px;
-      min-width: 535px;
+      min-width: 100%;
       padding: 16px 16px;
-      padding-right: 231px;
       background: transparent;
       border: 1.5px solid #ffffff;
       color: #ffffff;
@@ -24,12 +21,41 @@ const SubscribeStyle = styled.div`
       color: #2c88bb;
       background: #ffffff;
       border-radius: 57px;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
+      min-width: 100%;
       padding: 15px 18px;
-      margin-left: -213px;
       border: 1.5px solid #ffffff;
       width: 213.906px;
+    }
+    input,
+    button {
+      :focus {
+        outline: none;
+      }
+      margin-bottom: 18px;
+    }
+  }
+  @media (min-width: 768px) {
+    form {
+      input {
+        min-width: 535px;
+        padding-right: 231px;
+        background: transparent;
+        border: 1.5px solid #ffffff;
+        color: #ffffff;
+        box-sizing: border-box;
+        border-radius: 57px;
+      }
+      button {
+        color: #2c88bb;
+        background: #ffffff;
+        border-radius: 57px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        padding: 15px 18px;
+        margin-left: -213px;
+        border: 1.5px solid #ffffff;
+        min-width: 213.906px;
+      }
     }
   }
 `
@@ -37,7 +63,7 @@ const SubscribeStyle = styled.div`
 class SubscribeForm extends Component {
   state = {
     resultMessage: '',
-    btnText: 'Follow Our Journey',
+    btnText: defaultButtonText,
   }
 
   handleSubmit = async e => {
@@ -66,7 +92,11 @@ class SubscribeForm extends Component {
           <input
             type="email"
             name="email"
-            onChange={() => this.setState({ btnText: 'Follow Our Journey' })}
+            onChange={() => {
+              if (this.state.btnText !== defaultButtonText) {
+                this.setState({ btnText: defaultButtonText })
+              }
+            }}
             placeholder="youremail@example.com"
           />
           <button type="submit">{this.state.btnText}</button>
