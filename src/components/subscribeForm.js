@@ -8,6 +8,7 @@ const SubscribeStyle = styled.div`
     font-family: Montserrat;
 
     input {
+      position: relative;
       font-size: 16px;
       min-width: 100%;
       padding: 16px 16px;
@@ -18,6 +19,7 @@ const SubscribeStyle = styled.div`
       border-radius: 57px;
     }
     button {
+      position: relative;
       color: #2c88bb;
       background: #ffffff;
       border-radius: 57px;
