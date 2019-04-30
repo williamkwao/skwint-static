@@ -62,6 +62,10 @@ const HeaderStyle = styled.header`
     color: #fff !important;
   }
 
+  img {
+    width: 277.5px;
+  }
+
   /*Tablet potrait*/
   @media (min-width: 768px) {
     padding-top: 68px;
