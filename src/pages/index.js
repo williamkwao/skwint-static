@@ -77,7 +77,7 @@ const Header = () => {
 const IndexPage = () => (
   <Layout>
     <SEO
-      title="Home"
+      title="Skwint"
       keywords={[`skwint`, `Squint`, `inventory`, `ecommerce`]}
     />
     <LandingSection>
