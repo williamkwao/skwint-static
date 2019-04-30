@@ -23,6 +23,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint:
+          'https://gmail.us20.list-manage.com/subscribe/post?u=16b9a8f88c37eadcf08189a5f&amp;id=f15276c5e4',
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,

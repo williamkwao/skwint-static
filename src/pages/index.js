@@ -4,6 +4,7 @@ import SEO from '../components/seo'
 import styled from 'styled-components'
 import skwintLogo from '../images/skwint.png'
 import lines from '../images/lines.svg'
+import SubscribeForm from '../components/subscribeForm'
 
 const LandingSection = styled.section`
   position: relative;
@@ -82,6 +83,7 @@ const IndexPage = () => (
             accurate) browsing experience for customers, we will be able to
             deliver on those ideas.
           </p>
+          <SubscribeForm />
         </div>
       </div>
     </LandingSection>
