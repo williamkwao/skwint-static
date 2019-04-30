@@ -4,6 +4,12 @@ import styled from 'styled-components'
 
 const defaultButtonText = 'Follow Our Journey'
 const SubscribeStyle = styled.div`
+  a {
+    :visited {
+      color: #fff;
+    }
+    color: #fff;
+  }
   form {
     font-family: Montserrat;
 
@@ -36,6 +42,7 @@ const SubscribeStyle = styled.div`
       margin-bottom: 18px;
     }
   }
+
   /*Tablet potrait*/
   @media (min-width: 768px) {
     form {
