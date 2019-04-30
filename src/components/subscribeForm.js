@@ -34,6 +34,7 @@ const SubscribeStyle = styled.div`
       margin-bottom: 18px;
     }
   }
+  /*Tablet potrait*/
   @media (min-width: 768px) {
     form {
       input {

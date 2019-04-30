@@ -38,22 +38,33 @@ const LandingSection = styled.section`
 
   .text-div {
     max-width: 650px;
-    margin-top: 200px;
+    margin-top: 32px;
   }
 
   .content {
     max-width: 1248px;
     margin: auto;
-    padding: 5px;
+    padding: 8px;
   }
-
+  /*Tablet potrait*/
+  @media (min-width: 768px) {
+    .text-div {
+      margin-top: 160px;
+    }
+  }
+  /*Desktop*/
   @media (min-width: 992px) {
   }
 `
 const HeaderStyle = styled.header`
-  padding-top: 68px;
+  padding-top: 26px;
   h1 {
     color: #fff !important;
+  }
+
+  /*Tablet potrait*/
+  @media (min-width: 768px) {
+    padding-top: 68px;
   }
 `
 const Header = () => {
