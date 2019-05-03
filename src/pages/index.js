@@ -19,6 +19,9 @@ const LandingSection = styled.section`
   .lines {
     position: absolute;
     /* top: -247px; */
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
     right: -10px;
     width: 60%;
     height: calc(100vh - 72px);
