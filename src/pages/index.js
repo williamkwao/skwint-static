@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import styled from 'styled-components'
 import skwintLogo from '../images/skwint.png'
-import lines from '../images/lines.svg'
+import lines from '../images/lines-01.png'
 import SubscribeForm from '../components/subscribeForm'
 
 const LandingSection = styled.section`
@@ -18,8 +18,10 @@ const LandingSection = styled.section`
   background-size: cover;
   .lines {
     position: absolute;
-    top: -247px;
-    right: 0;
+    /* top: -247px; */
+    right: -10px;
+    width: 60%;
+    height: calc(100vh - 72px);
   }
   h1,
   p {
@@ -54,8 +56,8 @@ const LandingSection = styled.section`
   }
   /*Desktop*/
   @media (min-width: 992px) {
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 16%;
+    border-bottom-right-radius: 16%;
     min-height: calc(100vh - 80px);
   }
 `
