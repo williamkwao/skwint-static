@@ -54,6 +54,9 @@ const LandingSection = styled.section`
   }
   /*Desktop*/
   @media (min-width: 992px) {
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    min-height: calc(100vh - 80px);
   }
 `
 const HeaderStyle = styled.header`
