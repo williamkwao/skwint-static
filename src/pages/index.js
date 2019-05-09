@@ -16,6 +16,7 @@ const LandingSection = styled.section`
   background-position-y: top;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
   .lines {
     position: absolute;
     /* top: -247px; */
