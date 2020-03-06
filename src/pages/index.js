@@ -2,14 +2,13 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import styled from 'styled-components'
-import skwintLogo from '../images/skwint.png'
+import skwintLogo from '../images/skwintlogo.svg'
 import lines from '../images/lines-01.png'
 import SubscribeForm from '../components/subscribeForm'
 
 const LandingSection = styled.section`
   position: relative;
   min-height: 100vh;
-  background: linear-gradient(242.84deg, #87c9d8 8.29%, #2684b9 92.93%);
   color: #fff;
   background-repeat: no-repeat;
   background-position-x: right;
@@ -66,18 +65,17 @@ const LandingSection = styled.section`
   }
 `
 const HeaderStyle = styled.header`
-  padding-top: 26px;
+  padding-top: 17px;
+  padding-left: 16px;
   h1 {
     color: #fff !important;
   }
 
-  img {
-    width: 277.5px;
-  }
 
   /*Tablet potrait*/
   @media (min-width: 768px) {
-    padding-top: 68px;
+    padding-top: 17px;
+    padding-left: 16px;
   }
 `
 const Header = () => {
@@ -95,20 +93,8 @@ const IndexPage = () => (
     />
     <LandingSection>
       <img className="lines" src={lines} />
+      <Header />
       <div className="content">
-        <Header />
-        <div className="text-div">
-          <h1>Introducing Skwint.</h1>
-          <p>
-            At skwint, we have some ambitious ideas. In the same way that Google
-            organized the digital world, we aim to organize the phyical world.
-            By creating the world’s best inventory and store management system,
-            a revolutionary selling platform for vendors, and a simple (but
-            accurate) browsing experience for customers, we will be able to
-            deliver on those ideas.
-          </p>
-          <SubscribeForm />
-        </div>
       </div>
     </LandingSection>
   </Layout>
